@@ -17,7 +17,7 @@ A simple, responsive weather web app that lets users search for any city and vie
 
 ## Design
 
-<img src="WeatherAppt.png" alt="Mobile Screenshot" width="300" />
+<img src="WeatherApp.png" alt="Design" width="300" />
 
 ---
 
