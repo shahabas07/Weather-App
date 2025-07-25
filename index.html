@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
     <title>Weather-app</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="box">
-      <input type="text"  />
+      <input type="text" id="searchInput" placeholder="Enter city " />
+      <div id="errorMsg"></div>
       <div class="place"></div>
       <p id="p"></p>
       <div class="temp"></div>
       <div id="cloud"></div>
+      <img id="weatherIcon" alt="" style="display:none; width:60px;"/>
       <div id="temparature"></div>
+      <div id="humidity"></div>
+      <div id="wind"></div>
+      <div id="forecast"></div>
     </div>
     <script src="weather.js"></script>
   </body>
