@@ -17,7 +17,7 @@ A simple, responsive weather web app that lets users search for any city and vie
 
 ## Design
 
-[View Figma Mockup](#) 
+<img src="WeatherAppt.png" alt="Mobile Screenshot" width="300" />
 
 ---
 
@@ -25,7 +25,6 @@ A simple, responsive weather web app that lets users search for any city and vie
 
 - **Frontend:** HTML, CSS, JavaScript
 - **API:** [OpenWeatherMap](https://openweathermap.org/api)
-- (Optional) [Bootstrap](https://getbootstrap.com/) / [Tailwind CSS](https://tailwindcss.com/) for styling
 
 ---
 
@@ -48,11 +47,10 @@ A simple, responsive weather web app that lets users search for any city and vie
 
 ## 🌐 Deployment
 
-- Hosted at: [Live Demo](#) 
+- Hosted at GitHub Pages: [Live Demo](https://shahabas07.github.io/Weather-App/) 
 
 ---
 
 ## 🙋‍♂️ Author
 
 - **Shahabas Aman**
-- [GitHub](https://github.com/shahabas07)
