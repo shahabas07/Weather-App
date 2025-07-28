@@ -29,14 +29,10 @@ input {
   font-style:italic;
 }
 
-#temparature {
-  font-size: 18px;
-  font-style: oblique;
-}
 #p {
   font-size: 15px;
 }
-.place, .temper, #temparature, #p, .temp, #cloud{
+.place, #p, .temp, #cloud{
   margin-top: 20px;
   color: white;
 }
