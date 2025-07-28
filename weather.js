@@ -73,18 +73,31 @@ function fetchForecast(placeName) {
 }
 
 function renderForecast(data) {
-  // Group forecasts by day
+  // Group forecasts by day, excluding today
   const forecastEl = document.getElementById('forecast');
   forecastEl.innerHTML = '';
+  
+  // Get today's date to exclude it from forecast
+  const today = new Date();
+  const todayDateString = today.toDateString();
+  
   const dayMap = {};
   data.list.forEach((item) => {
     const date = new Date(item.dt * 1000);
+    const dateString = date.toDateString();
+    
+    // Skip entries that match today's date
+    if (dateString === todayDateString) {
+      return;
+    }
+    
     const day = date.toLocaleDateString('en-US', { weekday: 'short' });
     if (!dayMap[day]) {
       dayMap[day] = item;
     }
   });
 
+  // Render only the next 5 unique days starting from tomorrow
   Object.keys(dayMap).slice(0, 5).forEach((day) => {
     const item = dayMap[day];
     const temp = (item.main.temp - 273.15).toFixed(1);
