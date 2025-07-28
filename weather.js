@@ -78,7 +78,7 @@ function renderForecast(data) {
   forecastEl.innerHTML = '';
   const dayMap = {};
   data.list.forEach((item) => {
-    const date = new Date(item.dt * 800);
+    const date = new Date(item.dt * 1000);
     const day = date.toLocaleDateString('en-US', { weekday: 'short' });
     if (!dayMap[day]) {
       dayMap[day] = item;
@@ -125,7 +125,6 @@ function clearWeather() {
   document.querySelector('.temp').textContent = '';
   document.getElementById('cloud').textContent = '';
   document.getElementById('weatherIcon').style.display = 'none';
-  document.getElementById('temparature').textContent = '';
   document.getElementById('humidity').textContent = '';
   document.getElementById('wind').textContent = '';
 }
